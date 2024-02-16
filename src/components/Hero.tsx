@@ -1,12 +1,11 @@
-import Hero from "@/components/Hero";
-import Navbar from "@/components/Navbar";
-import Image from "next/image";
-import React, { useState } from "react";
+"use client";
 
-export default function Home() {
+import React from "react";
+import Image from "next/image";
+
+const Hero = () => {
   return (
     <>
-      {/* <Hero /> */}
       <div className=' min-h-screen w-full relative'>
         <Image
           src='/bg.svg'
@@ -18,4 +17,6 @@ export default function Home() {
       </div>
     </>
   );
-}
+};
+
+export default Hero;
