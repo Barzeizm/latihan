@@ -6,19 +6,20 @@ const config: Config = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  // theme: {
-  //   extend: {
-  //     backgroundImage: {
-  //       "gradient-radial":
-  //         "radial-gradient(var(--tw-gradient-stops))",
-  //       "gradient-conic":
-  //         "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-  //     },
-  //   },
-  // },
+  theme: {
+    extend: {
+      backgroundImage: {
+        'hero-bg': "url('/img/herobg.svg')",
+      },
+      fontFamily: {
+        'pop': ["Poppins", "sans-serif"],
+        'mon': ["Montserrat", "sans-serif"],
+      },
+    },
+  },
   plugins: [require("daisyui")],
   daisyui: {
-    themes: ["corporate"],
+    themes: ["light"],
   },
 };
 export default config;
